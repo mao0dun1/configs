@@ -1,0 +1,16 @@
+# Author:maodun
+# Modifydate:2025.6.14
+# Description:Configure helix 
+# Helpdocs:https://docs.helix-editor.com/title-page.html
+#          https://github.com/helix-editor/helix/wiki
+
+
+
+# Rust - rust-analyzer
+    ## Enale clippy
+    [language-server.rust-analyzer.config.check]
+    command = "clippy"
+
+    ## Enbale lsp all features
+    [language-server.rust-analyzer.config.cargo]
+    features = "all"

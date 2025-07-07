@@ -1,0 +1,70 @@
+# Author:maodun
+# Modifydate:2025.6.13
+# Descriptions:Configure i3blocks
+# Helpdocs:https://github.com/vivien/i3blocks/tree/master
+
+
+
+# Global properties
+separator=true
+separator_block_width=15
+markup=pango
+
+
+
+# Display cpu usage 
+[cpu_usage]
+command=i3blocks_cpu_usage.sh
+interval=5
+
+
+
+# Display memory usage
+[memory_usage]
+command=i3blocks_memory_usage.sh
+interval=5
+
+
+
+# Display brightness
+[brightness]
+command=i3blocks_brightness.sh
+interval=once
+signal=2
+
+
+
+# Display volume
+[volume]
+command=i3blocks_volume.sh
+interval=once
+signal=1
+
+
+
+# Dispaly bluetooth connection and battery capacity
+[bluetooth]
+command=i3blocks_bluetooth.sh
+interval=5
+
+
+
+# Display wifi status and signal strength
+[wifi]
+command=i3blocks_wifi.sh
+interval=5
+
+
+
+# Display battery status and capacity 
+[battery]
+command=i3blocks_battery.sh
+interval=5
+
+
+
+# Display current zone time
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+

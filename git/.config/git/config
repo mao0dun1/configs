@@ -1,0 +1,62 @@
+# Author:maodun
+# Modifydate:2025.6.16
+# Description:Configure git
+# Helpdocs:https://git-scm.com/doc
+#          https://docs.github.com/en
+
+
+# User settings 
+[user]
+	## Set user name
+	name = mao0dun1
+	
+	## Set user email
+	email = mao0dun1@gmail.com
+
+
+
+# Url settings
+	## Set part of ssh url alias
+	[url "git@github.com:mao0dun1/"]
+	InsteadOf = "s_mao0dun1:"
+
+	## Set part of https url alias
+	[url "https://github.com/mao0dun1/"]
+	InsteadOf = "h_mao0dun1:"
+
+
+
+# Init settings
+[init]
+	## Set init respository branch default name
+	defaultbranch = main
+
+
+
+# Status settings
+[Status]
+	## Display branch information
+	branch = true
+
+	## Display storage information
+	showstash = true
+
+
+
+# Push settings
+[Push]
+	## Map local branch to remote branch 
+	autoSetupRemote = true
+
+	## push current branch by default
+	default = current
+
+	## push with tags
+	followtags = true
+
+
+
+# Pull settings
+[Pull]
+	## pull current branch by default
+	default = current 

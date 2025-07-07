@@ -1,0 +1,46 @@
+# Author:maodun
+# Modifydate:2025.6.14
+# Description:Configure helix 
+# Helpdocs:https://docs.helix-editor.com/title-page.html
+#          https://github.com/helix-editor/helix/wiki
+
+
+
+# Configure editor display
+    ## Set editor theme
+    theme = "autumn"
+     
+    ## Set line number 
+    [editor]
+    line-number = "relative"
+    
+    ## Set true color
+    true-color = true
+  
+    ## Set cursor shape under different modes
+    [editor.cursor-shape]
+    normal = "block"
+    insert = "bar"
+    select = "underline"
+  
+    ## Set statusline
+    [editor.statusline]
+    left = ["mode", "spinner"]
+    center = ["file-name"]
+    right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+    separator = "│"
+    mode.normal = "NORMAL"
+    mode.insert = "INSERT"
+    mode.select = "SELECT"
+
+
+
+# Set editor fuction
+    ## Set .file picker
+    [editor.file-picker]
+    hidden = false
+    
+    ## Set lsp
+    [editor.lsp]
+    display-messages = true
+    display-inlay-hints = true
